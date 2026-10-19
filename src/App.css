@@ -1,0 +1,116 @@
+/* main page */
+.app {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* search */
+form {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+input,
+button {
+    padding: 0.6rem;
+    font-size: 1rem;
+}
+
+input {
+    width: 260px;
+    margin-right: 0.5rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* movie grid */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.card {
+    border: 1px solid #cccccc;
+    padding: 0.8rem;
+    background: white;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-bottom: 0.3rem;
+}
+
+.no-poster {
+    aspect-ratio: 2 / 3;
+    display: grid;
+    place-items: center;
+    background: #dddddd;
+    border-radius: 8px;
+}
+
+/* detail panel */
+.details {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 2px solid #555555;
+    background: #f4f4f4;
+}
+
+.details h2 {
+    margin-top: 0.5rem;
+}
+
+.close-button {
+    float: right;
+}
+
+/* messages and load more */
+.error {
+    color: crimson;
+}
+
+.empty {
+    text-align: center;
+    font-weight: bold;
+}
+
+.load-more {
+    display: block;
+    margin: 1.5rem auto;
+}
+
+/* tablet */
+@media (max-width: 750px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* phone */
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    input {
+        width: 100%;
+        margin: 0 0 0.5rem 0;
+        box-sizing: border-box;
+    }
+
+    form button {
+        width: 100%;
+    }
+}
